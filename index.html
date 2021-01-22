@@ -3,20 +3,105 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="text/css" rel="stylesheet" href="index.css">
     <title>Troc des trains</title>
 </head>
 <body>
     <header> 
-        <nav>
-            <li>
-                <ul><img src="images/menuburger.svg" alt="menuburger"></ul>
-                <ul><input type="button" value="Vends ton billet"></ul>
-                <ul><img src="images/iconeconnexion.svg" alt="connexion"> </ul>
-                <ul><img src="images/modalpanier.svg" alt="modalpanier"></ul>
-            </li>
-        </nav>
+        <h1>Troc des trains</h1>
+        <div class="menu">
+            <ul class="nav">
+                <li><img src="images/iconeconnexion.svg" alt="compte utilisateur" class="icones" ></li>
+                <li><img src="images/modalpanier.svg" alt="Compte panier" class="icones" ></li>
+            </ul>
+        </div>
     </header>
-
+    <h2>Réservez sans hesiter,<br>vos billets sont
+             certifiés et 100% remboursables !</h2>
+    <section class="formulairedate">
+        <form class="formulaire">
+                <div class="formul">
+                    <label class="label" for="depart">Départ</label>
+                    <input type="text"placeholder=" gare, adresse, lieu" required id="depart">
+                </div>
+                <div class="formul">
+                    <label class="label" for="arrivée">Arrivée</label>
+                    <input type="text"placeholder="gare, adresse, lieu" required id="arrivée">
+                </div>
+                <div class="formul">
+                    <label class="label" for="aller">Date aller</label>
+                    <input type="date"placeholder="15/02/2021" required id="aller">
+                </div>
+                <div class="formul">
+                    <label class="label" for="retour">Date retour</label>
+                    <input type="date"placeholder="Date retour" required id="retour">
+                </div>
+                <div>
+                    <button class="button">Rechercher</button>
+                </div>
+        </form>
+    </section>
     
+
+    <section class="destinations">
+        <h2>Top des destinations</h2>
+            <div class="slider">
+                <div class="slide">
+                    <figure>
+                    <img class = "slide " src="images/bordeaux.jpg" alt="bordeaux" >
+                    <figcaption>Bordeaux</figcaption>
+                    </figure>
+
+                    <figure>
+                    <img class = "slide" src="images/panam1.jpg" alt="paris">
+                    <figcaption>Paris</figcaption>
+                    </figure>
+
+                    <figure>
+                    <img class="slide" src="images/nice plage.jpg" alt="nice">
+                    <figcaption>Nice</figcaption>
+                    </figure>
+                    
+                    <figure>
+                    <img class="slide" src="images/marne la vallée.jpg" alt="marne la vallée">
+                    <figcaption>Marne-la-Vallée</figcaption>
+                    </figure>
+                <div>
+            </div> 
+    </section>
+
+    <section class="lesavis">
+        <div class="container">
+            <h2 class="av">Les avis<br></h2> 
+                <div class="avis">Avis client 1<br><p>Antoine Dupont<br></p> 
+                    <p><i>Prix attractifs et garantis
+                    Il y'a un mois</i></p></div>
+                        
+                <div class="avis">Avis client 2<br><p>Thierry Ruel<br></p> 
+                    <p><i>vraiment sécurisé
+                        Il y'a 3 semaines</i></p></div>
+
+                <div class="avis">Avis client 3<br><p>Marie Ruchier<br></p> 
+                    <p><i>fluides, service de qualité
+                            Il y'a 2 jours</i></p></div>
+                
+                <div class="avis">Avis client 4<br><p>Manon Dussautier<br></p> 
+                    <p><i>Je vous recommande vivement ce site
+                            Il y'a 2 jours</i></p></div>
+        </div>  
+    </section>   
+
+    <section class=footer>
+        <footer>
+            <ul>
+                <li>Qui sommes nous ?<br></li> 
+                <li>Contactez-nous</li>
+                <li>Partenaires<br></li>
+                <li>FAQ</li> 
+                <li>Paiements</li> 
+                <div class="paiement"></div>
+            </ul>
+        </footer>
+    </section>
 </body>
 </html>
