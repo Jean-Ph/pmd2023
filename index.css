@@ -1,0 +1,123 @@
+/*responsive*/
+
+body{
+    margin: 30px;
+    padding: 7px;
+    background-color:#EFE7E7;
+}
+
+header{
+    display: flex; 
+    background-color:#123A74;
+}
+
+.nav{
+    
+
+}
+
+.menu{
+    width: 4em;
+    height: 4em;
+    float: right;
+}
+
+
+h1{
+    color: goldenrod;
+    font-weight: bold;
+    opacity: 80;
+}
+
+h2{
+    text-align: center;
+}
+
+/*_____________________________section carroussel________________________________*/
+
+figure {
+    border: thin #c0c0c0 solid;
+    display: inline-flex;
+    flex-flow: column;
+    padding: 0px;
+    max-width: 220px;
+    margin: auto;
+}
+
+img.slide{
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    text-align: center;
+}
+
+.slide{
+    text-align: center;
+}
+
+figcaption {
+    background-color: #222;
+    color: #fff;
+    font: italic smaller sans-serif;
+    padding: 3px;
+    text-align: center;
+}
+
+/*_________________________formulaire___________________________________________________*/
+.formulairedate{
+    text-align: center;
+}
+
+.formul{
+    display: inline;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+.button{
+
+padding: 5px;
+border radius: 0,5px;
+text-align:center;
+}
+
+/*_________________________container____________________________________________________*/
+
+.container{ background-color: darkgray;
+    padding: 5px;
+    display: inline-flex;
+    justify-content: center;
+}
+
+#container{
+    text-align: center;
+}
+
+
+/*______________________________________*class avis_____________________________________*/
+
+.avis{ background-color: goldenrod;
+    padding: 2px;
+    margin: 2px;
+    text-align: center;  
+}
+
+.av{
+    text-align: center;
+}
+/*_________________________________partie footer___________________________________________*/
+
+footer{
+    background-color:#2A2727;
+    size: 5px;
+    color: white;
+}
+
+
+/*_______________________________________partie media querie_________________*/
+@media (min-width: 900px) { 
+    body{
+        background-color: white;
+    }
+
+}
