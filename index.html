@@ -4,20 +4,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link type="text/css" rel="stylesheet" href="index.css">
-    <title>Troc des trains</title>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <title>Site troc des trains</title>
 </head>
 <body>
-    <header> 
-        <h1>Troc des trains</h1>
-        <div class="menu">
-            <ul class="nav">
-                <li><img src="images/iconeconnexion.svg" alt="compte utilisateur" class="icones" ></li>
-                <li><img src="images/modalpanier.svg" alt="Compte panier" class="icones" ></li>
-            </ul>
-        </div>
+    <header role="header"> 
+        <nav class="menu" role="navigation">
+            <div class="inner">
+                <div class="m-left">
+                    <h1 class="logo">Troc des trains</h1>
+                </div>
+                <div class="m-right">
+                <a href="#" class="m-link"><i class="fas fa-ticket-alt
+                    "></i> Vendre des billets</a>
+                <a href="#"class="m-link"><i class="fas fa-user"></i> Se connecter</a>
+                <a href="#"class="m-link"><i class="fas fa-shopping-bag
+                    "></i> Panier</a>
+                <a href="#" class="m-linkg"><i class="fas fa-low-vision
+                    "></i> Accesibilité</a>
+                </div>
+            </div>
+        </nav>
+        
     </header>
-    <h2>Réservez sans hesiter,<br>vos billets sont
-             certifiés et 100% remboursables !</h2>
+
+    <div class="accueil" > 
+        <img src="images/seineparis.jpg" id="seineparis">
+        <h2 id="accroche">Réservez sans hesiter,<br>vos billets sont
+            certifiés et 100% remboursables !</h2>
+    </div>
+
     <section class="formulairedate">
         <form class="formulaire">
                 <div class="formul">
@@ -41,10 +59,9 @@
                 </div>
         </form>
     </section>
-    
 
     <section class="destinations">
-        <h2>Top des destinations</h2>
+        <h2 class="topdestinations">Top des destinations</h2>
             <div class="slider">
                 <div class="slide">
                     <figure>
@@ -69,28 +86,28 @@
                 <div>
             </div> 
     </section>
-
+    
     <section class="lesavis">
-        <div class="container">
-            <h2 class="av">Les avis<br></h2> 
+        <h2 id="av">Les avis<br></h2> 
+        <div class="container flex">
                 <div class="avis">Avis client 1<br><p>Antoine Dupont<br></p> 
                     <p><i>Prix attractifs et garantis
                     Il y'a un mois</i></p></div>
                         
                 <div class="avis">Avis client 2<br><p>Thierry Ruel<br></p> 
                     <p><i>vraiment sécurisé
-                        Il y'a 3 semaines</i></p></div>
+                    Il y'a 3 semaines</i></p></div>
 
                 <div class="avis">Avis client 3<br><p>Marie Ruchier<br></p> 
                     <p><i>fluides, service de qualité
-                            Il y'a 2 jours</i></p></div>
+                    Il y'a 2 jours</i></p></div>
                 
                 <div class="avis">Avis client 4<br><p>Manon Dussautier<br></p> 
                     <p><i>Je vous recommande vivement ce site
-                            Il y'a 2 jours</i></p></div>
+                    Il y'a 2 jours</i></p></div>
         </div>  
-    </section>   
-
+    </section>           
+        
     <section class=footer>
         <footer>
             <ul>
