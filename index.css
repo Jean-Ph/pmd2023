@@ -2,6 +2,19 @@
 html body{
     margin: 0;
     padding: 0;
+    display: flex;
+    flex-direction: column;
+    background: #D7CCC8;
+
+}
+
+/*______les titres_______*/
+#accroche,
+#av{
+    font-family:'Roboto', sans-serif;
+}
+.topdestinations{
+    font-family: 'Roboto', sans-serif;
 }
 
 .inner{
@@ -85,7 +98,9 @@ figcaption {
 }
 
 /*_________________________container____________________________________________________*/
-
+#personae{
+    width: 30px;
+}
 
 .container.flex {
     display: flex;
@@ -102,7 +117,7 @@ figcaption {
 
 .container p {
     text-align: center;
-    background:white;
+    background:#FF9800;
     margin: 1em;
     padding: 1em;
 }
@@ -112,7 +127,7 @@ figcaption {
 }
 /*______________________________________*class avis_____________________________________*/
 
-.avis{ background-color: burlywood; 
+.avis{ background-color:#FAFAFA; 
     color: darkblue;
     padding: 2px;
     margin: 2px;
@@ -132,8 +147,89 @@ figcaption {
 footer{
     background-color:#2A2727;
     size: 5px;
+    color:white;
+    flex-shrink: 0;
+    border-top: 1px dashed #000;
+    width: 100%;
+    background:black;
+}
+
+#imgfooter{
+    width: 5%;
+}
+
+.contenu-footer{
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    font-size: 20px;
+    padding: 50px 0 100px;
+}
+
+.bloc{
+    width: 25%;
+    margin: 0 30px;
+}
+
+/*Contact footer*/
+
+.footer-vousinformez h3,
+.footer-lentreprise h3,
+.footer-nosengagements h3,
+.footer-suiveznous h3{
+    font-size: 20px;
+    padding-bottom: 20px;
+}
+
+/*Services*/
+
+.liste-informations,
+.liste-entreprise,
+.liste-engagements,
+.liste-suiveznous {
+    list-style-type: none;
+    
+}
+
+.liste-informations li,
+.liste-entreprise li,
+.liste-engagements li,
+.liste-suiveznous li {
+    padding: 2px 0;
+}
+
+.liste-informations a,
+.liste-entreprise a,
+.liste-engagements a,
+.liste-suiveznous a {
+    text-decoration: none;
     color: white;
 }
+
+.liste-informations a:hover,
+.liste-entreprise a:hover,
+.liste-engagements a:hover,
+.liste-suiveznous a:hover {
+    color: yellow
+}
+
+/*Suinez-nous-reseaux sociaux*/
+
+.liste-suiveznous img{
+    width: 30px;
+    margin: 10px 10px;
+}
+
+.liste-suiveznous a{
+    text-decoration: none;
+    color: white;
+    align-items: center;
+    font-size: 25px;
+}
+
+
 
 
 /*--------------------Régle pour le HEADER---------------------*/
@@ -181,3 +277,41 @@ footer{
 .m-link i {
     margin-right: 5px;
 }
+
+/*Media queries*/
+
+/*________ partie footer________*/
+
+
+@media screen and (max-width:1200px){
+
+    .contenu-footer {
+        width: 700px;
+        flex-wrap: wrap;
+    }
+    .bloc{
+        width: 40%;
+        margin: 0 0;
+    }
+    .bloc:nth-child(1),
+    .bloc:nth-child(2) {
+        margin-bottom: 50px;
+    }
+}
+
+@media screen and (max-width: 800px){
+    .contenu-footer{
+        width: 320px;
+    }
+    .bloc{
+        width: 300px;
+        margin: 30px 30px;
+    }
+
+    .bloc:nth-child(1),
+    .bloc:nth-child(2) {
+        margin-bottom: 30px;
+    }
+    .bloc:nth-child(1) {
+        margin-top: 0;
+    }
